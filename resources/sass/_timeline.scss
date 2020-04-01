@@ -1,0 +1,119 @@
+.timeline{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    .tittle{
+        font-style: normal;
+        line-height: 1.2;
+        text-align: center;
+        font-family: 'Aclonica', sans-serif;
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    .sub-tittle{
+        font-style: normal;
+        line-height: 1.3;
+        text-align: center;
+        font-family: "Simonetta", cursive;
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    .column-reverse{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .row-reverse{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .date-content-1 {
+        margin-left: 2rem;
+        margin-right: 0;
+    }
+
+    .date-content-2 {
+        margin-left: 0;
+        margin-right: 2rem;
+    }
+
+    .date-style{
+        font-family: "Simonetta", cursive;
+        transition: all .4s;
+        padding: 1rem 2.5rem;
+        background-color: #fff;
+        float: left;
+        background-color: #e0e0e0;
+    }
+
+    .iconBackground {
+        position: absolute;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 30px;
+        display: inline-block;
+        background-color: #e0e0e0;
+        top: 20px;
+        margin-left: -10px;
+    }
+
+    .text-content-1 {
+        margin-right: 2rem;
+        margin-left: 0;
+        transition: all .4s;
+        padding: 2rem 2.5rem;
+        background-color: #e0e0e0;
+    }
+
+    .text-content-2 {
+        margin-right: 0;
+        margin-left: 2rem;
+        transition: all .4s;
+        padding: 2rem 2.5rem;
+        background-color: #e0e0e0;
+    }
+
+    .timeline-subtittle{
+        font-family: 'Aclonica', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    .timeline-text{
+        margin-bottom: 0;
+        font-family: "Simonetta", cursive;
+        font-size: 1.1rem;
+    }
+
+    .timeline-element {
+        margin-bottom: 50px;
+        position: relative;
+        word-wrap: break-word;
+        word-break: break-word;
+        display: -webkit-flex;
+    }
+}
+
+.separline{
+    &::before{
+        top: 20px;
+        bottom: 0;
+        position: absolute;
+        content: "";
+        width: 2px;
+        background-color: #e0e0e0;
+        left: calc(50% - 1px);
+        height: calc(100% + 4rem);
+    }
+}

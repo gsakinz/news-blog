@@ -1,0 +1,85 @@
+// CSS FOR PROFILE WITH THE DISPLAY IMAGE ======>
+.profile{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #e0e0e0;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    .tittle{
+        font-style: normal;
+        line-height: 1.2;
+        text-align: center;
+        font-family: 'Aclonica', sans-serif;
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    .sub-tittle{
+        font-style: normal;
+        line-height: 1.3;
+        text-align: center;
+        font-family: "Simonetta", cursive;
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    .media-container{
+        flex-wrap: nowrap;
+        display: flex;
+        .img-figure{
+            width: 100%;
+            align-self: center;
+            img{
+                width: 100%;
+                border-radius: 150px;
+            }
+        }
+    }
+    .media-content{
+    flex-basis: 100%;
+    color: rgb(1, 3, 3);
+    padding: 4rem;
+    align-self: center!important;
+    }
+    .media-text1{
+        font-style: italic;
+    }
+}
+
+// CSS FOR PRAYER ======>
+
+.prayer-form{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    .tittle{
+        font-style: normal;
+        line-height: 1.2;
+        text-align: center;
+        font-family: 'Aclonica', sans-serif;
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    .sub-tittle{
+        font-style: normal;
+        line-height: 1.3;
+        text-align: center;
+        font-family: "Simonetta", cursive;
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    .media-container{
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        display: flex;
+    }
+    .box-height{
+        height: 280px;
+    }
+}
