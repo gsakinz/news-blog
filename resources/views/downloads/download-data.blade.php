@@ -9,10 +9,10 @@
             Join us Live
         </h3>
         <div class="container stream">
-            <iframe src="https://embed.restream.io/player/index.html?token=65d31fa439f0a600999c95e0016c9b9a" width="960" height="576" frameborder="0" allowfullscreen></iframe><p>Powered by <a href="https://restream.io">NU</a></p>
+            <iframe src="https://embed.restream.io/player/index.html?token=65d31fa439f0a600999c95e0016c9b9a" frameborder="0" allowfullscreen></iframe>
+            <p>
+                Powered by <a href="https://restream.io">NU</a>
+            </p>
         </div>
     </div>
 </section>
-
-
-

@@ -1,12 +1,15 @@
-.download{
+.profile-update{
+    text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #e0e0e0;
+    background-color: #fff;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
+    color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
     .tittle{
+        color: rgb(1, 3, 3);
         font-style: normal;
         line-height: 1.2;
         text-align: center;
@@ -14,21 +17,13 @@
         font-size: 2rem;
         font-weight: 300;
     }
+    img {
+        border-radius: 20%;
+        width: 330px;
+    }
 
-    .sub-tittle{
-        font-style: normal;
-        line-height: 1.3;
-        text-align: center;
-        font-family: "Simonetta", cursive;
-        font-size: 2rem;
-        font-weight: 300;
-    }
-    .stream{
-        text-align: center;
-    }
-    iframe{
-        width: 100%;
-        height:-webkit-fill-available;
-    }
 }
+
+
+
 

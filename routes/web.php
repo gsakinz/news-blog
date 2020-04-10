@@ -19,20 +19,20 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::post('/profilesetup', 'ProfileController@profilesetup');
+Route::get('/settings', 'ProfileController@settings');
 Route::get('/profile', 'ProfileController@profile');
 
 Route::get('/post', 'PostController@post');
+Route::post('/addPost', 'PostController@addPost');
+Route::get('/postsettings', 'PostController@postsettings');
+
 
 Route::get('/category', 'CategoryController@category');
-
-Route::get('/timeline', 'TimelineController@timeline');
-
-Route::get('/contact_us', 'ContactController@contact_us');
-
-Route::get('/download', 'DownloadController@download');
-
-Route::post('/addPost', 'PostController@addPost');
-
 Route::post('/addCategory', 'CategoryController@addCategory');
 
-Route::post('/prayer', 'ContactController@contact_us');
+Route::get('/contact_us', 'ContactController@contact_us');
+Route::post('/prayer', 'ContactController@prayer');
+
+Route::get('/download', 'DownloadController@download');
+Route::get('/timeline', 'TimelineController@timeline');

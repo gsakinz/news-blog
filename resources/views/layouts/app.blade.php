@@ -60,15 +60,19 @@
                             <li class="nav-item">
                                 <a class="nav-link text_style" href="{{ url('/timeline') }}">Timeline</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link text_style" href="{{ url('/profile') }}">Profile</a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link text_style dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->online_id }} <span class="caret"></span>
+                                    {{ Auth::user()->user_id }} <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item text_style" href="{{ url('/profile') }}">Profile</a>
+
                                     <a class="dropdown-item text_style" href="{{ url('/category') }}">Category</a>
                                     <a class="dropdown-item text_style" href="{{ url('/download') }}">Download</a>
+                                    <a class="dropdown-item text_style" href="{{ url('/settings') }}">Settings</a>
                                     <a class="dropdown-item text_style" href="{{ url('/contact_us') }}">Contact us</a>
                                     <a class="dropdown-item text_style" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
@@ -86,7 +90,6 @@
                 </div>
             </div>
         </nav>
-
         <main>
             @yield('content')
         </main>

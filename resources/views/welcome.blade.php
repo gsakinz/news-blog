@@ -29,6 +29,7 @@
                         <a href="{{ url('/timeline') }}">Timeline</a>
                         <a href="{{ url('/contact_us') }}">Contact us</a>
                         <a href="{{ url('/download') }}">Download</a>
+                        <a href="{{ url('/settings') }}">Settings</a>
                         <a href="{{ route('logout') }}"
                            onclick="event.preventDefault();
                                          document.getElementById('logout-form').submit();">
@@ -40,7 +41,7 @@
                         </form>
 
                         <div class="mt-5 text_style alert" role="alert">
-                            {{ Auth::user()->name }} is now logged in !
+                            {{ Auth::user()->name }} is now logged in!
                         </div>
 
                     @else

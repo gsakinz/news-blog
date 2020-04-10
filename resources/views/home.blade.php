@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="top-header overlay">
+<section class="top-header">
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-md-10">
@@ -11,6 +11,12 @@
                 <p class="pb-3 top-hrader-p">
                     Here in our forum, we will serve you with the truth through the word of God.
                 </p>
+                <br>
+                  @if (session('response'))
+                    <div class="mb-2 col-md-6 text_style offset-md-3" role="alert">
+                        {{ __('Post Added Successfully') }}
+                    </div>
+                  @endif
             </div>
         </div>
     </div>
@@ -40,24 +46,24 @@
     <!-- The slideshow -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="/images/image0.jpeg" alt="image0">
+          <img src="/images/IMG_1999.JPG" alt="IMG_1999">
           <div class="carousel-caption carousel-style">
             <h3>Investing</h3>
-            <p>We had such a great time investing!</p>
+            <p class="mb-1">We had such a great time investing!</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="/images/image1.jpg" alt="image1">
+          <img src="/images/IMG_1998.JPG" alt="IMG_1998">
           <div class="carousel-caption carousel-style">
             <h3>Every Penny Counts</h3>
-            <p>We had such a great giving</p>
+            <p class="mb-1">We had such a great giving</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="/images/image2.jpg" alt="image2">
+          <img src="/images/IMG_1997.JPG" alt="IMG_1997">
           <div class="carousel-caption carousel-style">
             <h3>Get Along</h3>
-            <p>We had such a great time together</p>
+            <p class="mb-1">We had such a great time together</p>
           </div>
         </div>
       </div>
@@ -73,67 +79,71 @@
 </section>
 
 <section class="about-us">
-    <div class="container pt-4 pb-3 mt-2">
-        <h2 class="pb-3 tittle">
-            WHY JOIN US
-        </h2>
-        <h3 class="pb-5 sub-tittle">
-            Always Current
-        </h3>
-        <div class="media-container">
-            <div class="media-block-img m-auto">
-                <div class="img-card">
-                    <img src="/images/img-122.jpeg">
-                </div>
-            </div>
-            <div class="text-block">
-                <div class="text-card">
-                    <div class="t-card px-3 col-12">
-                        <div class="p-4 d-flex align-items-start">
-                            <div class="card-img pr-3">
-                                <h3 class="text-img d-flex align-items-center justify-content-center">1</h3>
-                            </div>
-                            <div class="card-text">
-                                <h4 class="card-subtittle">Honest And Dependable</h4>
-                                <p class="card-text">
-                                    To be honest with someone else, we must know ourselves. We have to understand what we really think and feel about the world around us.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+<div class="container pt-4 pb-3 mt-2">
+    <h2 class="pb-3 tittle">
+        WHY JOIN US
+    </h2>
 
-                    <div class="t-card px-3 col-12">
-                        <div class="p-4 d-flex align-items-start">
-                            <div class="card-img pr-3">
-                                <h3 class="text-img d-flex align-items-center justify-content-center">2</h3>
-                            </div>
-                            <div class="card-text">
-                                <h4 class="card-subtittle">We Are Always Improving</h4>
-                                <p class="card-text">
-                                    Teams are complex systems of individuals with different preferences, skills, experiences, perspectives, and habits.
-                                </p>
-                            </div>
-                        </div>
+    <div class="text-block">
+        <div class="text-card">
+            <div class="t-card px-3 col-12">
+                <div class="p-4 d-flex align-items-start">
+                    <div class="card-img pr-3">
+                        <h3 class="text-img d-flex align-items-center justify-content-center">1</h3>
                     </div>
-
-                    <div class="t-card px-3 col-12">
-                        <div class="p-4 d-flex align-items-start">
-                            <div class="card-img pr-3">
-                                <h3 class="text-img d-flex align-items-center justify-content-center">3
-                                </h3>
-                            </div>
-                            <div class="card-text">
-                                <h4 class="card-subtittle">We are Passionate</h4>
-                                <p class="card-text">
-                                    Members of a winning team care for the needs of their team members, show empathy, sincerely appreciate others, make them feel valued, and strive to help them succeed.
-                                </p>
-                            </div>
-                        </div>
+                    <div class="card-text">
+                        <h4 class="card-subtittle">
+                            Honest And Dependable
+                        </h4>
+                        <p class="card-text">
+                            To be honest with someone else, we must know ourselves. We have to understand what we really think and feel about the world around us.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+<br>
+    <div class="text-block">
+        <div class="text-card">
+            <div class="t-card px-3 col-12">
+                <div class="p-4 d-flex align-items-start">
+                    <div class="card-img pr-3">
+                        <h3 class="text-img d-flex align-items-center justify-content-center">2</h3>
+                    </div>
+                    <div class="card-text">
+                        <h4 class="card-subtittle">
+                            We Are Always Improving
+                        </h4>
+                        <p class="card-text">
+                            Teams are complex systems of individuals with different preferences, skills, experiences, perspectives, and habits.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+    <div class="text-block">
+        <div class="text-card">
+            <div class="t-card px-3 col-12">
+                <div class="p-4 d-flex align-items-start">
+                    <div class="card-img pr-3">
+                        <h3 class="text-img d-flex align-items-center justify-content-center">3</h3>
+                    </div>
+                    <div class="card-text">
+                        <h4 class="card-subtittle">
+                            We are Passionate
+                        </h4>
+                        <p class="card-text">
+                            Members of a winning team care for the needs of their team members, show empathy, sincerely appreciate others, make them feel valued, and strive to help them succeed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </section>
 
 <footer>

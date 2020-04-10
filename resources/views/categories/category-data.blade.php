@@ -8,11 +8,13 @@
         <h3 class="pb-5 sub-tittle">
 
         </h3>
-        @if (session('response'))
-                        <div class="mb-2 col-md-6 offset-md-3" role="alert">
-                            {{ __('Category Added Successfully') }}
-                        </div>
-                    @endif
+
+          @if (session('response'))
+            <div class="mb-2 col-md-6 text_style offset-md-3" role="alert">
+                {{ __('Category Added Successfully') }}
+
+            </div>
+          @endif
 
         <form method="POST" action="{{ url('addCategory') }}">
             @csrf
@@ -21,7 +23,7 @@
                     {{ __('Enter Category') }}
                 </label>
                 <div class="col-md-6">
-                    <input id="category" type="text" name="name" value="" required="required" class="form-control ">
+                    <input id="category" type="text" placeholder="Forum Category" name="category_name" value="" required="required" class="form-control ">
 
                     @error('category')
                         <span class="invalid-feedback" role="alert">

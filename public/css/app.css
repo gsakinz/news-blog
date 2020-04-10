@@ -68,8 +68,10 @@ body {
 }
 
 .top-footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #e0e0e0;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
 .top-footer .social-row {
@@ -97,10 +99,11 @@ body {
 }
 
 .lower-footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #010303;
   color: #fff;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
 .lower-footer .display-p {
@@ -138,19 +141,29 @@ body {
   font-weight: 300;
 }
 
+.profile .id-style {
+  font-style: normal;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .profile .media-container {
   flex-wrap: nowrap;
   display: flex;
 }
 
 .profile .media-container .img-figure {
-  width: 100%;
+  width: 50%;
   align-self: center;
 }
 
 .profile .media-container .img-figure img {
   width: 100%;
-  border-radius: 150px;
+  border-radius: 300px;
 }
 
 .profile .media-content {
@@ -162,44 +175,6 @@ body {
 
 .profile .media-text1 {
   font-style: italic;
-}
-
-.prayer-form {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #fff;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-}
-
-.prayer-form .tittle {
-  font-style: normal;
-  line-height: 1.2;
-  text-align: center;
-  font-family: "Aclonica", sans-serif;
-  font-size: 2rem;
-  font-weight: 300;
-}
-
-.prayer-form .sub-tittle {
-  font-style: normal;
-  line-height: 1.3;
-  text-align: center;
-  font-family: "Simonetta", cursive;
-  font-size: 2rem;
-  font-weight: 300;
-}
-
-.prayer-form .media-container {
-  flex-direction: row-reverse;
-  flex-wrap: nowrap;
-  display: flex;
-}
-
-.prayer-form .box-height {
-  height: 280px;
 }
 
 .timeline {
@@ -322,21 +297,21 @@ body {
 }
 
 .top-header {
-  background-image: url("/images/header-1920x1464.jpg");
+  background-image: url("/images/IMG_2002.JPG");
   z-index: 0;
   background-size: cover;
-  align-items: center;
   min-height: 100vh;
+  align-items: center;
   padding-top: 10rem;
   padding-bottom: 10rem;
-  opacity: 0.8;
+  opacity: 1;
   color: #fff;
 }
 
 .top-header .top-header-h1 {
   text-align: center;
   font-family: "Aclonica", sans-serif;
-  font-size: 85px;
+  font-size: 50px;
   font-weight: 400;
   line-height: 1.2;
   padding: 10px 0;
@@ -344,7 +319,7 @@ body {
 
 .top-header .top-hrader-p {
   padding: 2rem 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: center;
   font-weight: 600;
   letter-spacing: 0.1rem;
@@ -375,8 +350,8 @@ body {
 }
 
 .home-article .article-text {
-  padding: 2rem 0;
-  font-size: 1.2rem;
+  padding: 2rem;
+  font-size: 1rem;
   text-align: center;
   font-weight: 600;
   letter-spacing: 0.1rem;
@@ -394,32 +369,24 @@ body {
 
 .carousel .carousel-inner img {
   width: 100%;
-  height: 640px;
 }
 
 .carousel .carousel-inner .carousel-style {
   padding-top: 10rem;
   padding-bottom: 2rem;
   opacity: 0.8;
-  color: #010303;
+  color: #fff;
 }
 
 .carousel .carousel-inner .carousel-style h3 {
   font-family: "Aclonica", sans-serif;
-  font-size: 3rem;
   font-weight: 300;
 }
 
-.carousel .carousel-inner .carousel-style p {
-  margin-bottom: 0;
-  font-family: "Simonetta", cursive;
-  font-size: 2rem;
-}
-
 .about-us {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  background-color: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #e0e0e0;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -437,7 +404,57 @@ body {
   font-weight: 300;
 }
 
-.about-us .sub-tittle {
+.about-us .text-block {
+  flex-basis: 100%;
+  border: 1px solid #010303;
+}
+
+.about-us .card-img {
+  width: auto;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.about-us .text-img {
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+  border: 2px solid #010303;
+  border-radius: 50%;
+}
+
+.about-us .card-subtittle {
+  font-family: "Aclonica", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.about-us .card-text {
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.prayer-form {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #e0e0e0;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.prayer-form .tittle {
+  font-style: normal;
+  line-height: 1.2;
+  text-align: center;
+  font-family: "Aclonica", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.prayer-form .sub-tittle {
   font-style: normal;
   line-height: 1.3;
   text-align: center;
@@ -446,62 +463,10 @@ body {
   font-weight: 300;
 }
 
-.about-us .media-container {
+.prayer-form .media-container {
   flex-direction: row-reverse;
   flex-wrap: nowrap;
   display: flex;
-}
-
-.about-us .media-container .media-block-img {
-  width: 53%;
-  padding-left: 2rem;
-  flex-shrink: 0;
-}
-
-.about-us .media-container .media-block-img .img-card {
-  align-self: center;
-}
-
-.about-us .media-container .media-block-img .img-card img {
-  width: 100%;
-}
-
-.about-us .media-container .text-block {
-  flex-basis: 100%;
-  border-top: 2px solid #010303;
-}
-
-.about-us .media-container .t-card {
-  border-bottom: 2px solid #010303;
-  border-radius: 0;
-  background-color: transparent;
-  text-align: left;
-}
-
-.about-us .media-container .card-img {
-  width: auto;
-  text-align: center;
-  flex-shrink: 0;
-}
-
-.about-us .media-container .text-img {
-  width: 64px;
-  height: 64px;
-  font-size: 32px;
-  border: 2px solid #010303;
-  border-radius: 50%;
-}
-
-.about-us .media-container .card-subtittle {
-  font-family: "Aclonica", sans-serif;
-  font-size: 1.1rem;
-  font-weight: 300;
-}
-
-.about-us .media-container .card-text {
-  margin-bottom: 0;
-  font-size: 1rem;
-  font-weight: 600;
 }
 
 .contact-us {
@@ -618,6 +583,11 @@ body {
   text-align: center;
 }
 
+.download iframe {
+  width: 100%;
+  height: -webkit-fill-available;
+}
+
 .category {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -650,6 +620,33 @@ body {
   flex-direction: row-reverse;
   flex-wrap: nowrap;
   display: flex;
+}
+
+.profile-update {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.profile-update .tittle {
+  color: #010303;
+  font-style: normal;
+  line-height: 1.2;
+  text-align: center;
+  font-family: "Aclonica", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.profile-update img {
+  border-radius: 20%;
+  width: 330px;
 }
 
 /*!
